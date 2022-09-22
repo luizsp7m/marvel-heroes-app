@@ -6,7 +6,23 @@ export const styles = StyleSheet.create({
 
   },
 
+  image: {
+    width: 150,
+    height: 200,
+    borderRadius: 8,
+    overflow: "hidden",
+    justifyContent: "flex-end",
+  },
+
+  footer: {
+    justifyContent: "flex-end",
+    height: 100,
+    padding: 12,
+  },
+  
   text: {
-    color: THEME.COLORS.TEXT,
+    fontFamily: THEME.FONT_FAMILY.SEMI_BOLD,
+    fontSize: THEME.FONT_SIZE.SM,
+    color: THEME.COLORS.TEXT_200,
   }
 });

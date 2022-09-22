@@ -1,8 +1,10 @@
 import axios from "axios";
 import md5 from "md5";
 
-const publicKey = "";
-const privateKey = "";
+import { MARVEL_API_PUBLIC_KEY, MARVEL_API_PRIVATE_KEY } from "@env";
+
+const publicKey = MARVEL_API_PUBLIC_KEY;
+const privateKey = MARVEL_API_PRIVATE_KEY;
 
 const ts = Number(new Date());
 

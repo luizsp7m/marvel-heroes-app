@@ -11,14 +11,14 @@ export const styles = StyleSheet.create({
     borderRadius: 16,
     backgroundColor: THEME.COLORS.BACKGROUND_800,
     marginTop: 8,
-    marginBottom: 16,
+    marginBottom: 16
   },
 
   input: {
     flex: 1,
     fontFamily: THEME.FONT_FAMILY.REGULAR,
     fontSize: THEME.FONT_SIZE.SM,
-    color: THEME.COLORS.TEXT,
+    color: THEME.COLORS.TEXT_200,
   },
 
   button: {

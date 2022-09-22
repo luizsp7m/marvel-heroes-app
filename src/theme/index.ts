@@ -3,10 +3,13 @@ export const THEME = {
     BACKGROUND_900: "#171920",
     BACKGROUND_800: "#252A34",
 
-    TEXT: "#EAEAEA",
-    GRAY: "#6F7075",
+    TEXT_200: "#e5e7eb",
+    TEXT_300: "#d1d5db",
+    TEXT_400: "#9ca3af",
 
     PRIMARY: "#5063F2",
+
+    FOOTER: ['rgba(0,0,0,0)', 'rgba(0,0,0,0.9)'],
   },
 
   FONT_FAMILY: {
@@ -19,6 +22,6 @@ export const THEME = {
   FONT_SIZE: {
     SM: 14,
     MD: 16,
-    LG: 24,
+    LG: 20,
   }
 }
