@@ -16,7 +16,7 @@ export function Search() {
       <TextInput
         style={styles.input}
         placeholder="Procure por um personagem"
-        placeholderTextColor={THEME.COLORS.TEXT_300}
+        placeholderTextColor={THEME.COLORS.TEXT_SECONDARY}
         value={searchInput}
         onChangeText={value => setSearchInput(value)}
       />
@@ -25,7 +25,7 @@ export function Search() {
         <FontAwesome
           name="search"
           size={18}
-          color={THEME.COLORS.TEXT_300}
+          color={THEME.COLORS.TEXT_SECONDARY}
         />
       </TouchableOpacity>
     </View>

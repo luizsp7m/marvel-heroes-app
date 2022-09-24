@@ -1,6 +1,7 @@
-import { Layout } from "./src/components/Layout";
 import { Home } from "./src/screens/Home";
 import { Loading } from "./src/components/Loading";
+import { Fragment } from "react";
+import { StatusBar } from "expo-status-bar";
 
 import {
   useFonts,
@@ -18,9 +19,14 @@ export default function App() {
     Inter_900Black
   });
 
+  if (!fontsLoaded) {
+    return <Loading />
+  }
+  
   return (
-    <Layout>
-      {fontsLoaded ? <Home /> : <Loading />}
-    </Layout>
+    <Fragment>
+      <StatusBar style="light" translucent />
+      <Home />
+    </Fragment>
   );
 }

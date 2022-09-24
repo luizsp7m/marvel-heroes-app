@@ -23,7 +23,7 @@ export function Pagination({ currentPage, numberPages, onChangePage }: Props) {
         <AntDesign
           name="banckward"
           size={14}
-          color={THEME.COLORS.TEXT_300}
+          color={THEME.COLORS.TEXT_SECONDARY}
           style={currentPage <= 1 && styles.disabled}
         />
       </TouchableOpacity>
@@ -53,7 +53,7 @@ export function Pagination({ currentPage, numberPages, onChangePage }: Props) {
         <AntDesign
           name="forward"
           size={14}
-          color={THEME.COLORS.TEXT_300}
+          color={THEME.COLORS.TEXT_SECONDARY}
           style={currentPage >= numberPages && styles.disabled}
         />
       </TouchableOpacity>

@@ -3,12 +3,12 @@ import { THEME } from "../../theme";
 
 export const styles = StyleSheet.create({
   container: {
-
+    flex: 1,
   },
 
   image: {
-    width: 150,
-    height: 200,
+    width: "100%",
+    height: 215,
     borderRadius: 8,
     overflow: "hidden",
     justifyContent: "flex-end",
@@ -23,6 +23,6 @@ export const styles = StyleSheet.create({
   text: {
     fontFamily: THEME.FONT_FAMILY.SEMI_BOLD,
     fontSize: THEME.FONT_SIZE.SM,
-    color: THEME.COLORS.TEXT_200,
+    color: THEME.COLORS.TEXT_PRIMARY,
   }
 });

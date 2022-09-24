@@ -3,14 +3,13 @@ import { THEME } from "../../theme";
 
 export const styles = StyleSheet.create({
   container: {
-    display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 18,
-    paddingVertical: 14,
+    paddingHorizontal: 24,
+    paddingVertical: 16,
     borderRadius: 16,
-    backgroundColor: THEME.COLORS.BACKGROUND_800,
-    marginTop: 8,
+    backgroundColor: THEME.COLORS.BACKGROUND_SECONDARY,
+    marginTop: 12,
     marginBottom: 16
   },
 
@@ -18,7 +17,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     fontFamily: THEME.FONT_FAMILY.REGULAR,
     fontSize: THEME.FONT_SIZE.SM,
-    color: THEME.COLORS.TEXT_200,
+    color: THEME.COLORS.TEXT_SECONDARY,
   },
 
   button: {

@@ -1,14 +1,12 @@
 export const THEME = {
   COLORS: {
-    BACKGROUND_900: "#171920",
-    BACKGROUND_800: "#252A34",
+    BACKGROUND_PRIMARY: "#171920",
+    BACKGROUND_SECONDARY: "#252A34",
 
-    TEXT_200: "#e5e7eb",
-    TEXT_300: "#d1d5db",
-    TEXT_400: "#9ca3af",
+    TEXT_PRIMARY: "#e5e7eb",
+    TEXT_SECONDARY: "#9ca3af",
 
     PRIMARY: "#5063F2",
-
     FOOTER: ['rgba(0,0,0,0)', 'rgba(0,0,0,0.9)'],
   },
 

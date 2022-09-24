@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import { ActivityIndicator, View } from "react-native";
 import { CharacterItemProps } from "../../components/CharacterItem";
 import { CharacterList } from "../../components/CharacterList";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { Pagination } from "../../components/Pagination";
 import { Search } from "../../components/Search";
 import { api } from "../../lib/api";
 import { THEME } from "../../theme";
+import { styles } from "./styles";
+import { Loading } from "../../components/Loading";
 
 const OFFSET = 20;
 const LIMIT = 20;
@@ -61,26 +64,19 @@ export function Home() {
   }, []);
 
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
       <Search />
 
       {loading ? (
-        <ActivityIndicator size={18} color={THEME.COLORS.PRIMARY} />
+        <Loading />
       ) : (
-        <>
-          <CharacterList
-            characters={characters}
-            currentPage={currentPage}
-            numberPages={numberPages}
-          />
-
-          <Pagination
-            currentPage={currentPage}
-            numberPages={numberPages}
-            onChangePage={onChangePage}
-          />
-        </>
+        <CharacterList
+          characters={characters}
+          currentPage={currentPage}
+          numberPages={numberPages}
+          onChangePage={onChangePage}
+        />
       )}
-    </View>
+    </SafeAreaView>
   );
 }

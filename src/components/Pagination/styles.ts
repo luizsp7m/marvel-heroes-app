@@ -14,18 +14,18 @@ export const styles = StyleSheet.create({
   },
   
   buttonText: {
-    color: THEME.COLORS.TEXT_400,
+    color: THEME.COLORS.TEXT_SECONDARY,
     fontFamily: THEME.FONT_FAMILY.REGULAR,
     fontSize: THEME.FONT_SIZE.SM
   },
 
   currentPage: {
-    color: THEME.COLORS.TEXT_200,
+    color: THEME.COLORS.TEXT_SECONDARY,
     fontFamily: THEME.FONT_FAMILY.REGULAR,
     fontSize: THEME.FONT_SIZE.SM
   },
 
   disabled: {
-    opacity: 0.35,
+    
   }
 });

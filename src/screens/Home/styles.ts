@@ -3,10 +3,8 @@ import { THEME } from "../../theme";
 
 export const styles = StyleSheet.create({
   container: {
-
-  },
-
-  text: {
-    color: THEME.COLORS.TEXT,
+    flex: 1,
+    paddingHorizontal: 12,
+    backgroundColor: THEME.COLORS.BACKGROUND_PRIMARY,
   },
 });
