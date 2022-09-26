@@ -4,12 +4,12 @@ import { THEME } from "../../theme";
 import { styles } from "./styles";
 import { useState } from "react";
 
-export function Search() {
-  const [searchInput, setSearchInput] = useState("");
+interface Props {
+  onSearchCharacter: (param: string) => Promise<void>;
+}
 
-  function handleSearchCharacter() {
-    alert(searchInput);
-  }
+export function Search({ onSearchCharacter }: Props) {
+  const [searchInput, setSearchInput] = useState("");
 
   return (
     <View style={styles.container}>
@@ -21,7 +21,7 @@ export function Search() {
         onChangeText={value => setSearchInput(value)}
       />
 
-      <TouchableOpacity style={styles.button} onPress={handleSearchCharacter}>
+      <TouchableOpacity style={styles.button} onPress={() => onSearchCharacter(searchInput)}>
         <FontAwesome
           name="search"
           size={18}

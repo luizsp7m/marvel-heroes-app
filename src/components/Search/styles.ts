@@ -9,8 +9,7 @@ export const styles = StyleSheet.create({
     paddingVertical: 16,
     borderRadius: 16,
     backgroundColor: THEME.COLORS.BACKGROUND_SECONDARY,
-    marginTop: 12,
-    marginBottom: 16
+    marginVertical: 16,
   },
 
   input: {
